@@ -2,6 +2,6 @@
 
 ## Survey Perokok atau Non-Perokok
 
-### Screen Capture
+### Screen Capture 1
 
-![Recording](recording.gif)
+![Recording](recording-1.gif)

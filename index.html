@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="index.html">
+            <div>
+                <label for="name">Siapa nama anda?</label>
+            </div>
+            <div>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="age">Berapa umur anda?</label>
+            </div>
+            <div>
+                <input type="text" name="age" id="age">
+            </div>
+            <div>
+                <label for="gender">Apa jenis kelamin anda?</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="male" value="Laki-laki">
+                <label for="male">Laki-laki</label>
+                <input type="radio" name="gender" id="female" value="Perempuan">
+                <label for="female">Perempuan</label>
+            </div>
+            <div>
+                <label for="smoking">Apakah anda perokok?</label>
+            </div>
+            <div>
+                <input type="radio" name="smoking" id="smoker" value="Ya">
+                <label for="smoker">Ya</label>
+                <input type="radio" name="smoking" id="nonsmoker" value="Tidak">
+                <label for="nonsmoker">Tidak</label>
+            </div>
+            <div>
+                <label for="cigarette">Jika anda perokok, rokok apa yang pernah anda coba?</label>
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox" name="cigarette" id="gudang-garam-filter" value="Gudang Garam Filter">
+                    <label for="gudang-garam-filter">Gudang Garam Filter</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="cigarette" id="lucky-strike" value="Lucky Strike">
+                    <label for="lucky-strike">Lucky Strike</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="cigarette" id="marlboro" value="Marlboro">
+                    <label for="marlboro">Marlboro</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="cigarette" id="esse" value="Esse">
+                    <label for="esse">Esse</label>
+                </div>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Kirim">
+                <input type="reset" name="reset" value="Reset">
+            </div>
+        </form>
+    </body>
+</html>

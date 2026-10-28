@@ -4,8 +4,8 @@
 
 ### Screen Capture 1 (Form)
 
-![Recording](recording-1.gif)
+![Recording](docs/recording-1.gif)
 
 ### Screen Capture 2 (Table)
 
-![Recording](recording-2.gif)
+![Recording](docs/recording-2.gif)

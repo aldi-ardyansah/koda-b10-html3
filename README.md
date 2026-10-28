@@ -2,6 +2,10 @@
 
 ## Survey Perokok dan Non-Perokok
 
-### Screen Capture
+### Form Screen Capture
 
 ![Recording](docs/recording.gif)
+
+### Table Screenshoot
+
+![Screenshoot](docs/screenshoot.png)

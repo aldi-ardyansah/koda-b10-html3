@@ -68,6 +68,7 @@ hr {
     border: none;
     border-radius: 5px;
     justify-self: start;
+    font-weight: bold;
 }
 
 .btn-clear {
@@ -77,6 +78,7 @@ hr {
     border: none;
     border-radius: 5px;
     justify-self: end;
+    font-weight: bold;
 }
 
 .required {
@@ -85,6 +87,7 @@ hr {
 
 .required-question {
     color: red;
+    font-size: small;
 }
 
 .gender, .smoking {
@@ -109,4 +112,30 @@ input[type="radio"],
 input[type="checkbox"] {
     width: auto;
     padding: 0;
+}
+
+.checkbox {
+    padding: 8px 0;
+}
+
+.email {
+    font-weight: bold;
+    color: #5e5e5e;
+    font-size: small;
+}
+
+.switch {
+    font-size: small;
+}
+
+.btn-table {
+    background-color: #5746E3FF;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    justify-self: start;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: small;
 }

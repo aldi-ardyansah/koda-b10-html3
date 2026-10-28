@@ -128,6 +128,8 @@ input[type="checkbox"] {
     font-size: small;
 }
 
+/* table.html */
+
 .btn-table {
     background-color: #5746E3FF;
     color: #FFFFFF;
@@ -138,4 +140,20 @@ input[type="checkbox"] {
     font-weight: bold;
     text-decoration: none;
     font-size: small;
+}
+
+.table-container {
+    width: auto;
+    justify-self: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #DADADA;
+    margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
 }

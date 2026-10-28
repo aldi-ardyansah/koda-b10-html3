@@ -1,70 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Form Survey
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Perokok dan Non-Perokok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
         <form action="table.html">
-            <div>
-                <label for="name">Siapa nama anda?</label>
+            <div class="card-header">
+                <h1>Survey Perokok dan Non-perokok</h1>
+                <hr>
+                <span>guest@gmail.com <a href="index.html">Switch account</a></span>
+                <br>
+                <hr>
+                <span class="required-question">* Indicates required question</span>
             </div>
-            <div>
-                <input type="text" name="name" id="name">
-            </div>
-            <div>
-                <label for="age">Berapa umur anda?</label>
-            </div>
-            <div>
-                <input type="text" name="age" id="age">
-            </div>
-            <div>
-                <label for="male">Apa jenis kelamin anda?</label>
-            </div>
-            <div>
-                <input type="radio" name="gender" id="male" value="Laki-laki">
-                <label for="male">Laki-laki</label>
-                <input type="radio" name="gender" id="female" value="Perempuan">
-                <label for="female">Perempuan</label>
-            </div>
-            <div>
-                <label for="smoker">Apakah anda perokok?</label>
-            </div>
-            <div>
-                <input type="radio" name="smoking" id="smoker" value="Ya">
-                <label for="smoker">Ya</label>
-                <input type="radio" name="smoking" id="nonsmoker" value="Tidak">
-                <label for="nonsmoker">Tidak</label>
-            </div>
-            <div>
-                <label for="gudang-garam-filter">Jika anda perokok, rokok apa yang pernah anda coba?</label>
-            </div>
-            <div>
+            <div class="card">
                 <div>
-                    <input type="checkbox" name="cigarette" id="gudang-garam-filter" value="Gudang Garam Filter">
-                    <label for="gudang-garam-filter">Gudang Garam Filter</label>
+                    <label for="name">Siapa nama anda?<sup class="required">*</sup></label>
                 </div>
+                <br>
                 <div>
-                    <input type="checkbox" name="cigarette" id="lucky-strike" value="Lucky Strike">
-                    <label for="lucky-strike">Lucky Strike</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="cigarette" id="marlboro" value="Marlboro">
-                    <label for="marlboro">Marlboro</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="cigarette" id="esse" value="Esse">
-                    <label for="esse">Esse</label>
+                    <input type="text" name="name" id="name" placeholder="Your answer" required>
                 </div>
             </div>
-            <div>
-                <input type="submit" name="submit" value="Kirim">
-                <input type="reset" name="reset" value="Reset">
+            <div class="card">
+                <div>
+                    <label for="age">Berapa umur anda?<sup class="required">*</sup></label>
+                </div>
+                <br>
+                <div>
+                    <input type="number" name="age" id="age" placeholder="Your answer" required>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label for="male">Apa jenis kelamin anda?<sup class="required">*</sup></label>
+                </div>
+                <br>
+                <div class="gender">
+                    <div class="option">
+                        <input type="radio" name="gender" id="male" value="Laki-laki" required>
+                        <label for="male">Laki-laki</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gender" id="female" value="Perempuan" required>
+                        <label for="female">Perempuan</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label for="smoker">Apakah anda perokok?<sup class="required">*</sup></label>
+                </div>
+                <br>
+                <div class="smoking">
+                    <div class="option">
+                        <input type="radio" name="smoking" id="smoker" value="Ya" required>
+                        <label for="smoker">Ya</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="smoking" id="nonsmoker" value="Tidak" required>
+                        <label for="nonsmoker">Tidak</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <label for="gudang-garam-filter">Jika anda perokok, rokok apa yang pernah anda coba?</label>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <input type="checkbox" name="cigarette" id="gudang-garam-filter" value="Gudang Garam Filter">
+                        <label for="gudang-garam-filter">Gudang Garam Filter</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cigarette" id="lucky-strike" value="Lucky Strike">
+                        <label for="lucky-strike">Lucky Strike</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cigarette" id="marlboro" value="Marlboro">
+                        <label for="marlboro">Marlboro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cigarette" id="esse" value="Esse">
+                        <label for="esse">Esse</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <input class="btn-submit" type="submit" name="submit" value="Submit">
+                <input class="btn-clear" type="reset" name="reset" value="Clear form">
             </div>
         </form>
         <br>
-        <a href="table.html" type="button">Lihat Tabel Hasil Survey</a>
-    </body>
+        <div class="card-footer">
+            <a href="table.html" type="button">Lihat Tabel Hasil Survey</a>
+        </div>
+        <br>
+    </main>
+</body>
 </html>

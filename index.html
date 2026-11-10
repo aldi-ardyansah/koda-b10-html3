@@ -5,102 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Perokok dan Non-Perokok</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <main class="main">
-        <form action="table.html" id="form">
-            <div class="card-header">
-                <h1>Survey Perokok dan Non-perokok</h1>
-                <hr>
-                <span><span class="email">guest@gmail.com </span><a class="switch" href="index.html">Switch account</a></span>
-                <br>
-                <hr>
-                <span class="required-question">* Indicates required question</span>
+<body class="bg-violet-50">
+    <main class="flex flex-col justify-center items-center gap-2 my-4">
+        <form class="flex flex-col gap-2" action="table.html" id="form">
+            <div class="flex flex-col p-10 rounded-lg bg-white border-1 border-mist-300 border-t-8 border-t-indigo-700">
+                <h1 class="text-3xl font-semibold">Survey Perokok dan Non-perokok</h1>
+                <hr class="-mx-10 my-4 border-t border-gray-300">
+                <div>
+                    <span>guest@gmail.com </span>
+                    <a class="text-blue-700 underline" href="index.html">Switch account</a>
+                </div>
+                <hr class="-mx-10 my-4 border-t border-gray-300">
+                <span class="text-red-600">* Indicates required question</span>
             </div>
-            <div class="card">
+            <div class="flex flex-col p-10 rounded-lg bg-white border-1 border-mist-300 gap-4">
                 <div>
-                    <label for="name">Siapa nama anda?<sup class="required">*</sup></label>
+                    <label for="name">Siapa nama anda?<sup class="text-red-600">*</sup></label>
                 </div>
-                <br>
                 <div>
-                    <input type="text" name="name" id="name" placeholder="Your answer" required>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <label for="age">Berapa umur anda?<sup class="required">*</sup></label>
-                </div>
-                <br>
-                <div>
-                    <input type="number" name="age" id="age" placeholder="Your answer" required>
+                    <input class="border-b-1 border-gray-300 w-full focus:outline-none focus:border-b-2 focus:border-blue-700" type="text" name="name" id="name" placeholder="Your answer" required>
                 </div>
             </div>
-            <div class="card">
+            <div class="flex flex-col p-10 rounded-lg bg-white border-1 border-mist-300 gap-4">
                 <div>
-                    <label for="male">Apa jenis kelamin anda?<sup class="required">*</sup></label>
+                    <label for="age">Berapa umur anda?<sup class="text-red-600">*</sup></label>
                 </div>
-                <br>
-                <div class="gender">
-                    <div class="option">
+                <div>
+                    <input class="border-b-1 border-gray-300 w-full focus:outline-none focus:border-b-2 focus:border-blue-700" type="number" name="age" id="age" placeholder="Your answer" required>
+                </div>
+            </div>
+            <div class="flex flex-col p-10 rounded-lg bg-white border-1 border-mist-300 gap-4">
+                <div>
+                    <label for="male">Apa jenis kelamin anda?<sup class="text-red-600">*</sup></label>
+                </div>
+                <div>
+                    <div>
                         <input type="radio" name="gender" id="male" value="Laki-laki" required>
                         <label for="male">Laki-laki</label>
                     </div>
-                    <div class="option">
+                    <div>
                         <input type="radio" name="gender" id="female" value="Perempuan" required>
                         <label for="female">Perempuan</label>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="flex flex-col p-10 rounded-lg bg-white border-1 border-mist-300 gap-4">
                 <div>
-                    <label for="smoker">Apakah anda perokok?<sup class="required">*</sup></label>
+                    <label for="smoker">Apakah anda perokok?<sup class="text-red-600">*</sup></label>
                 </div>
-                <br>
-                <div class="smoking">
-                    <div class="option">
+                <div>
+                    <div>
                         <input type="radio" name="smoking" id="smoker" value="Ya" required>
                         <label for="smoker">Ya</label>
                     </div>
-                    <div class="option">
+                    <div>
                         <input type="radio" name="smoking" id="nonsmoker" value="Tidak" required>
                         <label for="nonsmoker">Tidak</label>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="flex flex-col p-10 rounded-lg bg-white border-1 border-mist-300 gap-4">
                 <div>
                     <label for="gudang-garam-filter">Jika anda perokok, rokok apa yang pernah anda coba?</label>
                 </div>
-                <br>
                 <div>
-                    <div class="checkbox">
+                    <div>
                         <input type="checkbox" name="cigarette" id="gudang-garam-filter" value="Gudang Garam Filter">
                         <label for="gudang-garam-filter">Gudang Garam Filter</label>
                     </div>
-                    <div class="checkbox">
+                    <div>
                         <input type="checkbox" name="cigarette" id="lucky-strike" value="Lucky Strike">
                         <label for="lucky-strike">Lucky Strike</label>
                     </div>
-                    <div class="checkbox">
+                    <div>
                         <input type="checkbox" name="cigarette" id="marlboro" value="Marlboro">
                         <label for="marlboro">Marlboro</label>
                     </div>
-                    <div class="checkbox">
+                    <div>
                         <input type="checkbox" name="cigarette" id="esse" value="Esse">
                         <label for="esse">Esse</label>
                     </div>
                 </div>
             </div>
-            <div class="card-footer">
-                <input class="btn-submit" type="submit" name="submit" value="Submit">
-                <input class="btn-clear" type="reset" name="reset" value="Clear form">
+            <div class="flex">
+                <button class="font-medium bg-indigo-700 text-white p-2 rounded-md" type="submit" name="submit">Submit</button>
+                <button class="ml-auto font-medium" type="reset" name="reset">Clear form</button>
             </div>
         </form>
-        <br>
-        <div class="card-footer">
-            <a class="btn-table" href="table.html" type="button">Lihat Tabel Hasil Survey</a>
+        <div class="flex">
+            <a class="bg-indigo-700 text-white p-2 rounded-md" href="table.html" type="button">Lihat Tabel Hasil Survey</a>
         </div>
-        <br>
     </main>
     <script src="index.js"></script>
 </body>

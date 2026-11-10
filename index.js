@@ -60,7 +60,7 @@ if (table) {
             item.age,
             item.gender,
             item.smoking,
-            ...cigarette.map(value => item.cigarette.includes(value) ? "✓" : "—")
+            ...cigarette.map(value => item.cigarette.includes(value) ? "✓" : "-")
         ]);
     });
 }

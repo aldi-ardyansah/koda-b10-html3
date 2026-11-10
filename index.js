@@ -64,3 +64,14 @@ if (table) {
         ]);
     });
 }
+
+const remove = document.getElementById("buttonRemove");
+
+if (remove) {
+    remove.addEventListener("click", () => {
+        localStorage.clear();
+
+        const tbody = document.querySelector("tbody");
+        tbody.replaceChildren();
+    });
+}

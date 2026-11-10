@@ -158,3 +158,14 @@ table, thead, tbody, th, tr, td {
   text-align: center;
   border-collapse: collapse;
 }
+
+.btn-remove {
+    display: flex;
+    background-color: #EEEDFCFF;
+    color: #5746E3FF;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    justify-self: end;
+    font-weight: bold;
+}

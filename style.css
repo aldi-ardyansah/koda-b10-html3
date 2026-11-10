@@ -152,8 +152,9 @@ input[type="checkbox"] {
     margin-top: 10px;
 }
 
-th, td {
-  border: 1px solid #ddd;
+table, thead, tbody, th, tr, td {
+  border: 1px solid #000000;
   padding: 8px;
   text-align: center;
+  border-collapse: collapse;
 }
